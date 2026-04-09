@@ -30,5 +30,4 @@ echo "TOTAL PROCESSES RUNNING: $total_pros"
 echo "  "
 echo "---------------TOP 5 CONSUMING PROCESSES------------------"
 echo "    "
-(ps -eo user,pid,pcpu,pmem,comm --sort=-pcpu | head -n 6) <<< "top_consum"
-echo "$top_consum"
+ps -eo user,pid,pcpu,pmem,comm --sort=-pcpu | head -n 6
